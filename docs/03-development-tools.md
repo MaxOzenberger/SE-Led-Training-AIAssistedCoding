@@ -2,7 +2,7 @@
 
 [Back to the pre-work overview](../README.md)
 
-## Step 6: Install Node.js, Python, and Git
+## Step 1: Install Node.js, Python, and Git
 
 These tools run underneath the applications used in the workshop. Install all three; each takes a few minutes.
 
@@ -15,7 +15,7 @@ python --version
 
 If the terminal reports that a command is not recognized, follow the corresponding installation steps below. On macOS, check Python with `python3 --version` if `python` is unavailable.
 
-## 6a: Node.js
+## Step 1a: Node.js
 
 Node.js runs JavaScript outside the browser so you can develop on localhost.
 
@@ -41,7 +41,7 @@ See below for the expected output once it has finished installing. If you are pr
 
 ![A Windows PowerShell terminal showing a completed Node.js installation and version checks](assets/nodejs-install-terminal.png)
 
-## 6b: Python
+## Step 1b: Python
 
 Python is used for the ArcGIS Notebooks and ArcPy section.
 

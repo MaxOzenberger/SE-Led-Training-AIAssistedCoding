@@ -2,7 +2,7 @@
 
 [Back to the pre-work overview](../README.md)
 
-## Step 3: Install Visual Studio Code
+## Step 1: Install Visual Studio Code
 
 Visual Studio Code (VS Code) is the free editor you will use to write code and work with Copilot.
 
@@ -18,7 +18,7 @@ On Windows, select these options on the **Select Additional Tasks** screen:
 > [!NOTE]
 > **macOS:** Download the **Universal** build, unzip it, and drag `Visual Studio Code.app` into `/Applications`. On the first launch, right-click the application and select **Open** if macOS displays an unidentified-developer prompt.
 
-## Step 4: Install the VS Code extensions
+## Step 2: Install the VS Code extensions
 
 Open the **Extensions** panel, search for each extension by name, and install it from the verified publisher shown below.
 
@@ -32,7 +32,7 @@ Open the **Extensions** panel, search for each extension by name, and install it
 | **Live Preview**        | Microsoft | Renders HTML and CSS in a live-refreshing preview for the Hub cards section.                          |
 | **ESLint**              | Microsoft | Flags JavaScript and TypeScript mistakes in the Maps SDK and Experience Builder sections.             |
 
-## Step 5: Sign in to GitHub Copilot
+## Step 3: Sign in to GitHub Copilot
 
 After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-github-copilot-access) is approved, connect Copilot inside VS Code.
 
@@ -73,7 +73,7 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
 6. Type `Hello` and confirm that Copilot replies.
 
-## Step 6: Fork & Clonethe Training GitHub Repository
+## Step 4: Fork & Clonethe Training GitHub Repository
 
 1. Open up the training repo @ [SE-Led-Training-AIAssistedCoding](https://github.com/valdesrosier/SE-Led-Training-AIAssistedCoding).
 
