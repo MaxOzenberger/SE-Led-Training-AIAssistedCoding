@@ -2,65 +2,102 @@
 
 [Back to the pre-work overview](../README.md)
 
-## Step 1: Install Node.js, Python, and Git
+## Install Node.js and Python
 
-These tools run underneath the applications used in the workshop. Install all three; each takes a few minutes.
+> [!NOTE]
+> We will be using Python 3.13 and Node version 24.19.0
+> See below for notes on Node version.
+> If you have Node and Python already configured on your machine and don't want to use the same versions, that's fine; just proceed at your own risk :)
+> If you are unsure, follow the steps below.
 
-Before downloading an installer, open a terminal in VS Code with **Terminal > New Terminal** and check whether Node.js and Python are already installed:
-
-```shell
-node --version
-python --version
-```
-
-If the terminal reports that a command is not recognized, follow the corresponding installation steps below. On macOS, check Python with `python3 --version` if `python` is unavailable.
-
-## Step 1a: Node.js
+### Step 1: Node.js
 
 Node.js runs JavaScript outside the browser so you can develop on localhost.
 
-1. Open a new Powershell terminal as an Administrator.
-2. Copy, paste, and run the following command to install Node.js:
+#### Windows
 
-   ```powershell
-    # Download and install Chocolatey:
-    powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
+- Open a new Powershell terminal as an Administrator.
+- Copy, paste, and run the following command to install Node.js:
 
-    # Download and install Node.js:
-    choco install nodejs --version="24.19.0"
+  ```powershell
+   # Download and install Chocolatey:
+   powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
 
-    # Verify the Node.js version:
-    node -v # Should print "v24.19.0".
+   # Download and install Node.js:
+   choco install nodejs --version="24.19.0"
 
-    # Verify npm version:
-    npm -v # Should print "11.17.0".
+   # Verify the Node.js version:
+   node -v # Should print "v24.19.0".
 
-   ```
+   # Verify npm version:
+   npm -v # Should print "11.17.0".
+  ```
 
-See below for the expected output once it has finished installing. If you are prompted during the installation, select/enter "Y" or "Yes" to continue.
+  See below for the expected output once it has finished installing. If you are prompted during the installation, select/enter "Y" or "Yes" to continue.
 
-![A Windows PowerShell terminal showing a completed Node.js installation and version checks](assets/nodejs-install-terminal.png)
+  ![A Windows PowerShell terminal showing a completed Node.js installation and version checks](assets/nodejs-install-terminal.png)
 
-## Step 1b: Python
+#### Mac
 
-Python is used for the ArcGIS Notebooks and ArcPy section.
+Mac users can use `nvm` (Node Version Manager) to install Node.js. If you already have `nvm` installed, you can skip the first two commands in the script below.
 
-1. Install the **uv** package to support Python in VS Code:
+- Open a new terminal.
+- Copy, paste, and run the following commands to install Node.js:
 
-   ```powershell
-   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-   ```
+```shell
+  # Download and install nvm:
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
 
-See below for the expected output once it has finished installing. If you are prompted during the installation, select/enter "Y" or "Yes" to continue.
-![A Windows PowerShell terminal showing a completed uv installation](assets/uv-install-terminal.png)
+  # in lieu of restarting the shell
+  \. "$HOME/.nvm/nvm.sh"
 
-2. Close Powershell and reopen it.
-3. Verify that uv is installed:
+  # Download and install Node.js:
+  nvm install 24
 
-   ```powershell
-   uv --version
-   ```
+  # Verify the Node.js version:
+  node -v # Should print "v24.19.0".
 
-![A Windows PowerShell terminal showing a completed uv installation](assets/uv-post-install-confirm.png)
+  # Verify npm version:
+  npm -v # Should print "11.17.0".
+```
+
+### Step 2: Python
+
+Python is used for the ArcGIS Notebooks and ArcPy section. We will install the popular `uv` Python environment manager to manage versions and dependencies. You will install Python using `uv` later in the workshop.
+
+#### Windows
+
+- Install the **uv** package to support Python in VS Code:
+
+  ```powershell
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  ```
+
+  See below for the expected output once it has finished installing. If you are prompted during the installation, select/enter "Y" or "Yes" to continue.
+  ![A Windows PowerShell terminal showing a completed uv installation](assets/uv-install-terminal.png)
+
+- Close Powershell and reopen it.
+- Verify that uv is installed:
+
+  ```powershell
+  uv --version
+  ```
+
+  ![A Windows PowerShell terminal showing a completed uv installation](assets/uv-post-install-confirm.png)
+
+#### Mac
+
+- Open a terminal and run the following command to install uv:
+
+```shell
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+- Close and reopen the terminal.
+- Verify that uv is installed:
+
+```shell
+  uv --version
+```
 
 Next: [Set up Experience Builder Developer Edition (optional)](04-experience-builder.md)
