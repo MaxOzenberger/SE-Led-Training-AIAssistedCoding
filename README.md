@@ -2,7 +2,7 @@
 
 ## Pre-work: install and setup guide
 
-Complete every step in this guide **before** the workshop. It takes about **30-45 minutes**, most of which is downloads installing in the background. If you get stuck, note the step and exact error text and bring it to the session. We will clear setup issues in the first 20 minutes.
+Complete every step in this guide **before** the workshop. It takes about **30-45 minutes**, most of which is downloads installing in the background. If you get stuck, reach out to Val and Adam before the workshop.
 
 > [!IMPORTANT]
 > Request GitHub Copilot access first. Approval usually clears the same day, but can take **2-3 business days**. Submit the request before installing anything, then complete the remaining setup while it processes.
