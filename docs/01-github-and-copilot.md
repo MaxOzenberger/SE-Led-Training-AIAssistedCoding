@@ -31,4 +31,29 @@ You can log in at [github.com](https://github.com) and see your profile. You are
 
 You do not need to wait for approval before continuing. You will need approved access when you [sign in to Copilot in VS Code](02-visual-studio-code.md#step-5-sign-in-to-github-copilot).
 
+## Step 3: Install or Verify you have Git installed
+
+1. Open a powershell terminal and run the following command to check if Git is installed:
+
+   ```shell
+   git --version
+   ```
+
+> [!NOTE]
+> **macOS:** Running `git --version` for the first time may prompt you to install the Xcode Command Line Tools, which include Git. Accept the prompt, or run `brew install git` if you use Homebrew.
+
+You should see a version number. If you do not, follow the instructions below.
+
+### Installing Git
+
+Git tracks changes to code and communicates with GitHub.
+
+1. Go to the [Git downloads page](https://git-scm.com/downloads) and download the installer.
+2. Accept the defaults, with one change: when prompted to select Git's editor, choose **Use Visual Studio Code as Git's default editor**.
+3. Open a new powershell and verify the installation:
+
+   ```shell
+   git --version
+   ```
+
 Next: [Set up Visual Studio Code](02-visual-studio-code.md)
