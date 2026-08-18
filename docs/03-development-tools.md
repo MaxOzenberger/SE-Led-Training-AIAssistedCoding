@@ -17,6 +17,7 @@ Node.js runs JavaScript outside the browser so you can develop on localhost.
 #### Windows
 
 - Open a new Powershell terminal as an Administrator.
+  > If you don't have Admin access on your machine, download the Windows installer from [Node Download](https://nodejs.org/en/download). Accept all defaults. Then skip to Python install.
 - Copy, paste, and run the following command to install Node.js:
 
   ```powershell
