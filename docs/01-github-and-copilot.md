@@ -29,7 +29,7 @@ You can log in at [github.com](https://github.com) and see your profile. You are
 2. Submit the request with your Esri credentials.
 3. Watch for a confirmation that access has been granted.
 
-You do not need to wait for approval before continuing. You will need approved access when you [sign in to Copilot in VS Code](02-visual-studio-code.md#step-5-sign-in-to-github-copilot).
+You do not need to wait for approval before continuing. You will need approved access when you [sign in to Copilot in VS Code](02-visual-studio-code.md#step-3-sign-in-to-github-copilot).
 
 ## Step 3: Install or Verify you have Git installed
 

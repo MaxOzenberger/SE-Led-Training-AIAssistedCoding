@@ -73,7 +73,7 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
 6. Type `Hello` and confirm that Copilot replies.
 
-## Step 4: Fork & Clonethe Training GitHub Repository
+## Step 4: Fork & Clone the Training GitHub Repository
 
 1. Open up the training repo @ [SE-Led-Training-AIAssistedCoding](https://github.com/valdesrosier/SE-Led-Training-AIAssistedCoding).
 
@@ -85,12 +85,15 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
 4. You will be taken to your forked repo. Leave this browser tab open.
 
-5. Create a folder on your `C:` drive for this project and any future devleopment. . For example, `C:\dev`.
+5. Create a folder on your `C:` drive (for Mac users, `~/dev` is a good choice) for this project and any future development. For example, `C:\dev` (on Mac, `~/dev`).
 
-6. Open a new Powershell window and navigate to the folder you created in the previous step. For example, if you created a folder called `dev` on your `C:` drive, run the following command:
+6. Open a new Powershell window (or Terminal on macOS) and navigate to the folder you created in the previous step. For example, if you created a folder called `dev` on your `C:` drive, run the following command:
 
    ```powershell
    cd C:\dev
+
+   # On macOS, use:
+   # cd ~/dev
    ```
 
    ![Powershell CD](assets/powershell-cd.jpg)
@@ -99,12 +102,12 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
    ![The Copilot sign-in dialog with Continue with GitHub selected](assets/fork-repo3.jpg)
 
-8. Back in your Powershell window, run the following command to clone your forked repo to your local machine. Replace `<YOUR_GITHUB_USERNAME>` with your GitHub username.
+8. Back in your Powershell (or Terminal on macOS) window, run the following command to clone your forked repo to your local machine. Replace `<YOUR_GITHUB_USERNAME>` with your GitHub username.
 
    ```powershell
    git clone https://github.com/<YOUR_GITHUB_USERNAME>/SE-Led-Training-AIAssistedCoding.git
    ```
 
-9. You should see a new folder called `SE-Led-Training-AIAssistedCoding` in your `C:\dev` folder. You can now open this folder in VS Code.
+9. You should see a new folder called `SE-Led-Training-AIAssistedCoding` in your `C:\dev` (on Mac, `~/dev`) folder. You can now open this folder in VS Code.
 
 Next: [Install Node.js, Python, and Git](03-development-tools.md)
