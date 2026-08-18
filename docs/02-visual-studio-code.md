@@ -2,22 +2,6 @@
 
 [Back to the pre-work overview](../README.md)
 
-## Step 1: Install Visual Studio Code
-
-Visual Studio Code (VS Code) is the free editor you will use to write code and work with Copilot.
-
-1. Go to the [VS Code download page](https://code.visualstudio.com/download) and download the installer for your operating system.
-2. Run the installer.
-3. Launch VS Code to confirm that it opens.
-
-On Windows, select these options on the **Select Additional Tasks** screen:
-
-- **Add to PATH**
-- **Add "Open with Code" to the context menu** (recommended)
-
-> [!NOTE]
-> **macOS:** Download the **Universal** build, unzip it, and drag `Visual Studio Code.app` into `/Applications`. On the first launch, right-click the application and select **Open** if macOS displays an unidentified-developer prompt.
-
 ## Step 2: Install the VS Code extensions
 
 Open the **Extensions** panel, search for each extension by name, and install it from the verified publisher shown below.

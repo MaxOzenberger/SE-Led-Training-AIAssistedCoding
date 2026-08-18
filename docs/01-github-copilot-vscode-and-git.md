@@ -1,4 +1,4 @@
-# GitHub and Copilot access
+# GitHub, Copilot access, VSCode, and Git
 
 [Back to the pre-work overview](../README.md)
 
@@ -31,7 +31,22 @@ You can log in at [github.com](https://github.com) and see your profile. You are
 
 You do not need to wait for approval before continuing. You will need approved access when you [sign in to Copilot in VS Code](02-visual-studio-code.md#step-3-sign-in-to-github-copilot).
 
-## Step 3: Install or Verify you have Git installed
+## Step 3: Install Visual Studio Code
+
+Visual Studio Code (VS Code) is the free editor you will use to write code and work with Copilot.
+
+1. Go to the [VS Code download page](https://code.visualstudio.com/download) and download the installer for your operating system.
+
+   > [!NOTE]
+   > **macOS:** Download the **Universal** build, unzip it, and drag `Visual Studio Code.app` into `/Applications`. On the first launch, right-click the application and select **Open** if macOS displays an unidentified-developer prompt.
+
+2. Run the installer.
+   On Windows, select these options on the **Select Additional Tasks** screen:
+   - **Add to PATH**
+   - **Add "Open with Code" to the context menu** (recommended)
+3. Launch VS Code to confirm that it opens.
+
+## Step 4: Install or Verify you have Git installed
 
 1. Open a powershell terminal and run the following command to check if Git is installed:
 
