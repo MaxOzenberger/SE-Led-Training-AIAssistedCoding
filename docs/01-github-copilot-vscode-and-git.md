@@ -37,8 +37,8 @@ Visual Studio Code (VS Code) is the free editor you will use to write code and w
 
 1. Go to the [VS Code download page](https://code.visualstudio.com/download) and download the installer for your operating system.
 
-   > [!NOTE]
-   > **macOS:** Download the **Universal** build, unzip it, and drag `Visual Studio Code.app` into `/Applications`. On the first launch, right-click the application and select **Open** if macOS displays an unidentified-developer prompt.
+> [!NOTE]
+> **macOS:** Download the **Universal** build, unzip it, and drag `Visual Studio Code.app` into `/Applications`. On the first launch, right-click the application and select **Open** if macOS displays an unidentified-developer prompt.
 
 2. Run the installer.
    On Windows, select these options on the **Select Additional Tasks** screen:
