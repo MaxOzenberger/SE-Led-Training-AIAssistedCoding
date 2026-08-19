@@ -36,7 +36,8 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
 4. Type `Hello` and confirm that Copilot replies.
 
-> [!NOTE] If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
+> [!NOTE]
+> If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
 
 ### macOS
 
@@ -59,7 +60,8 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
 6. Type `Hello` and confirm that Copilot replies.
 
-> [!NOTE] If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
+> [!NOTE]
+> If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
 
 ## Step 4: Fork & Clone the Training GitHub Repository
 
