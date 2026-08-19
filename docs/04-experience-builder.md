@@ -27,7 +27,7 @@ A quick note on versioning ([Experience Builder release and version table](https
 
    If you see this security alert, but local host opens without issue, you can safely `Cancel` out of the popup:
 
-   <img src="node-security-alert.png" width="300">
+   <img src="assets/node-security-alert.png" width="300">
 
 > [!NOTE]
 > If you are using Chrome, you may experience issues. Try using Edge or Firefox instead.
