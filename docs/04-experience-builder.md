@@ -18,7 +18,7 @@ A quick note on versioning ([Experience Builder release and version table](https
 
 2. Unzip the folder to a local spot on your machine (do not unzip in the downloads folder). For example: `C:\Dev\arcgis-experience-builder-1.20` (on Mac, `~/dev/arcgis-experience-builder-1.20`).
 
-3. Follow the [Experience Builder Developer Edition install guide](https://developers.arcgis.com/experience-builder/guide/install-guide/)
+3. Follow the [Experience Builder Developer Edition install guide](https://developers.arcgis.com/experience-builder/guide/install-guide/) for Steps 1 (option 1), 2, and 3. No need to reinstall node, since you already did so in your pre-work.
 
 ## Quick check
 
