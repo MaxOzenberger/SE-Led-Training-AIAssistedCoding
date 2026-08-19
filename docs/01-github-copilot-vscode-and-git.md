@@ -48,7 +48,7 @@ Visual Studio Code (VS Code) is the free editor you will use to write code and w
 
 ## Step 4: Install or Verify you have Git installed
 
-1. Open a powershell terminal and run the following command to check if Git is installed:
+1. Open a powershell terminal (or Terminal on macOS) and run the following command to check if Git is installed:
 
    ```shell
    git --version
@@ -65,7 +65,7 @@ Git tracks changes to code and communicates with GitHub.
 
 1. Go to the [Git downloads page](https://git-scm.com/downloads) and download the installer.
 2. Accept the defaults, with one change: when prompted to select Git's editor, choose **Use Visual Studio Code as Git's default editor**.
-3. Open a new powershell and verify the installation:
+3. Open a new powershell (or Terminal on macOS) and verify the installation:
 
    ```shell
    git --version
