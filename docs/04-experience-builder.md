@@ -18,15 +18,18 @@ A quick note on versioning ([Experience Builder release and version table](https
 
 2. Unzip the folder to a local spot on your machine (do not unzip in the downloads folder). For example: `C:\Dev\arcgis-experience-builder-1.20` (on Mac, `~/dev/arcgis-experience-builder-1.20`).
 
-3. Follow the [Experience Builder Developer Edition install guide](https://developers.arcgis.com/experience-builder/guide/install-guide/) for Steps 1 (option 1), 2, and 3. No need to reinstall node, since you already did so in your pre-work.
+3. Follow the [Experience Builder Developer Edition install guide](https://developers.arcgis.com/experience-builder/guide/install-guide/) for Steps 1 (option 1), 2, and 3. No need to reinstall node, since you already did so in your pre-work. We typically recommend opening a separate command promp / terminal on your machine to run `/server` and then run `/client` from the terminal in VS Code. Both need to stay open for the Developer Edition to keep running.
+
    > [!NOTE]
    > The ArcGIS guide uses "terminal" or "command prompt" generically. On Windows, use PowerShell. On Mac, use Terminal.
 
-## Quick check
+4. After you've completed the install steps and run `npm start` from `/server` and `/client`, Experience Builder should open at `https://localhost:3001` with no terminal errors. Your browser will warn about the certificate the first time (it's self-signed and local) — choose **Advanced → Proceed** to continue.
 
-Run `npm start` from `/server`. Experience Builder should open at `https://localhost:3001` with no terminal errors.
+   If you see this security alert, but local host opens without issue, you can safely `Cancel` out of the popup:
 
-Your browser will warn about the certificate the first time (it's self-signed and local) — choose **Advanced → Proceed** to continue.
+   <img src="node-security-alert.png" width="300">
 
 > [!NOTE]
 > If you are using Chrome, you may experience issues. Try using Edge or Firefox instead.
+
+5. Feel free to explore the Dev Edition on your machine, when you are done, type `ctrl+c` and end the process for both the `/server` and `/client`. We will spin this back up during the final exercise in the training.
