@@ -9,7 +9,8 @@ For the Experience Builder exercise, we'll develop a custom widget that can be h
 
 A quick note on versioning ([Experience Builder release and version table](https://developers.arcgis.com/experience-builder/guide/release-versions/)). Custom Experience Builder widgets can only be hosted in ArcGIS Enterprise, but you can also build fully custom apps on the framework and host them independently, which is why Esri releases downloadable versions that stay in step with ArcGIS Online. For this exercise, we're targeting a widget hosted on **ArcGIS Enterprise 12.1**, using **Experience Builder Developer Edition 1.20** — so that's the version you'll download.
 
-> [!NOTE] There is a newer version (1.21) but it is contemporary with the ArcGIS Online Experience Builder, not ArcGIS Enterprise.
+> [!NOTE]
+> There is a newer version (1.21) but it is contemporary with the ArcGIS Online Experience Builder, not ArcGIS Enterprise.
 
 ## Step 1: Download and Install Experience Builder Developer Edition
 
