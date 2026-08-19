@@ -20,6 +20,9 @@ Open the **Extensions** panel, search for each extension by name, and install it
 
 After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-github-copilot-access) is approved, connect Copilot inside VS Code.
 
+> [!NOTE]
+> You may need to sign out of your GitHub account within VSCode and back in if you do not see the option to open the chat or it doesn't automatically open.
+
 ### Windows
 
 1. Select the **Sign In** button at the top of the VS Code window.
