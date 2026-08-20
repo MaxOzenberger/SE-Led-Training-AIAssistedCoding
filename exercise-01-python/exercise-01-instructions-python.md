@@ -6,6 +6,11 @@
 
 We'll design it first using `/grill-with-docs`, then build it.
 
+> [!IMPORTANT]
+> After copilot has finished responding, you can review what files were created, deleted, or changed by expanding the **Files changed** section in the chat. You can also click on any file to see a diff of what was added or removed. If you don't like the changes, you can click **Undo** to undo them. If you are fine with the changes, you can click the blue **Keep** button.
+
+![Command approval from copilot](../docs/assets/copilot-edits-keep-undo-buttons.jpg)
+
 ---
 
 ## Step 1 — Open Visual Studio Code
