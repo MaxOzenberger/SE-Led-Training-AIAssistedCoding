@@ -35,12 +35,16 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
 3. Confirm that Chat opens on the right side of the VS Code window. If it does not, select the Chat icon on the top bar.
 
+   > [!NOTE]
+   > If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
+
    ![The Chat icon in the VS Code title bar](assets/vscode-chat-icon.png)
 
-4. Type `Hello` and confirm that Copilot replies.
+4. Under the input box in the Chat panel, click **Auto** and note the available models. You should see a list of models similar to the following:
 
-> [!NOTE]
-> If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
+   ![The list of available models in the Copilot Chat panel](assets/copilot-list-of-models.png)
+
+5. Select any of the models, then type `Hello` and confirm that Copilot replies.
 
 ### macOS
 
@@ -57,14 +61,19 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
    ![The Continue with GitHub button in the Copilot sign-in window on macOS](assets/vscode-macos-continue-with-github.png)
 
 4. Sign in to GitHub and follow the browser prompts.
+
 5. Confirm that Chat opens on the right side of the VS Code window. If it does not, select the Chat icon on the top bar.
+
+   > [!NOTE]
+   > If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
 
    ![The Chat icon in the VS Code title bar](assets/vscode-chat-icon.png)
 
-6. Type `Hello` and confirm that Copilot replies.
+6. Under the input box in the Chat panel, click **Auto** and note the available models. You should see a list of models similar to the following:
 
-> [!NOTE]
-> If you do not see the option to open the chat or it doesn't automatically open, log out of your GitHub account and back in, then the chat should be available.
+   ![The list of available models in the Copilot Chat panel](assets/copilot-list-of-models.png)
+
+7. Select any of the models, then type `Hello` and confirm that Copilot replies.
 
 ## Step 4: Fork & Clone the Training GitHub Repository
 
