@@ -6,14 +6,23 @@
 
 We'll design it first using `/grill-with-docs`, then build it.
 
+> [!IMPORTANT]
+> After copilot has finished responding, you can review what files were created, deleted, or changed by expanding the **Files changed** section in the chat. You can also click on any file to see a diff of what was added or removed. If you don't like the changes, you can click **Undo** to undo them. If you are fine with the changes, you can click the blue **Keep** button.
+
+![Command approval from copilot](../docs/assets/copilot-edits-keep-undo-buttons.jpg)
+
 ---
 
 ## Step 1 — The prompt
 
-Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Paste the following prompt:
+1. Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Ensure your model is set to "Auto".
+
+2. Start by typing a forward slash (`/`) to see the list of available skills. Select `/grill-with-docs` from the list by arrowing up or down to highlight it and then press tab, but do not press enter yet.
+
+3. Paste the following prompt after the pill.
 
 ```
-/grill-with-docs I want to build a web app using the ArcGIS Maps SDK for JavaScript and
+I want to build a web app using the ArcGIS Maps SDK for JavaScript and
 its AI Components. It should have:
 
 1. Sign-in to ArcGIS (named ArcGIS Online account).
@@ -33,28 +42,45 @@ Ask me about anything ambiguous before we settle the design.
 Write all code and files for this project only inside the `exercise-03-javascriptsdk/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
 ```
 
----
+4. Press `Enter` to run the skill.
 
 ## Step 5 — What happens next
 
-- Answer the interview questions (by number where it helps).
-  > **Note — scaling up to bigger builds:** For a small app like this, going straight from grilling to building is fine. For a bigger, multi-part app, this is where you'd add two steps first:
-  >
-  > - **`/to-spec`** — turns the design you just settled into a written spec you can review.
-  > - **`/to-tickets`** — breaks that spec into small, ordered tickets, each one a buildable chunk.
-  >
-  > **Why bother?** It keeps the AI working on one clearly-defined piece at a time instead of juggling the whole app at once. That's where large AI builds usually drift — losing track of earlier decisions as the work grows. The spec and tickets are the paper trail that keeps it on course.
-- When the design is settled, tell the assistant to `/implement`
+1. Answer each question in the chat. You can answer however you like, as long it's clear to the model which question you are answering. You can also ask follow up questions to clarify anything you don't understand. The skill will write down the design as you go.
+   - Example: "q1: agreed, q2: explain in less technical terms, q3-6: agreed, q7: yes but add ..."
 
-### Building and running your app
+   > [!NOTE]
+   > Copilot may ask your approval to run commands during the course of a response. Be sure to review the **command summary** beneath the code preview to see what commands it wants to run. If you approve, click **Allow**. If you don't, click **Skip** and ask the model to clarify or change its approach.
+
+   ![Command approval from copilot](../docs/assets/copilot-chat-run-command-approval.jpg)
+
+   > [!NOTE]
+   > **Scaling up to bigger builds:** For a small app like this, going straight from grilling to building is fine. For a bigger, multi-part app, this is where you'd add two steps first:
+   >
+   > - **`/to-spec`** — turns the design you just settled into a written spec you can review.
+   > - **`/to-tickets`** — breaks that spec into small, ordered tickets, each one a buildable chunk.
+   >
+   > **Why bother?** It keeps the AI working on one clearly-defined piece at a time instead of juggling the whole app at once. That's where large AI builds usually drift — losing track of earlier decisions as the work grows. The spec and tickets are the paper trail that keeps it on course.
+
+2. When the design is settled, copilot may begin implementing on its own. If not you can use the `/implement` skill to tell it to start building the app and any other files needed for the project.
+
+## Step 6 - Building and running your app
 
 Because the agent designs the app during the interview, the exact run command depends on what it built (a plain HTML page, a Vite app, and so on). These steps work for any of them:
 
 1. **Register an OAuth app in ArcGIS Online.** The sign-in needs a client ID. In ArcGIS Online: **Content → New item → Developer credentials** (OAuth 2.0), then add your local address (e.g. `https://localhost:5173`) as a **Redirect URI**. Copy the generated **Client ID**.
-2. **Give the app the client ID.** Ask the agent where to put it — usually an `.env.local` file or a config value. It will tell you the exact variable name for the app it built.
+
+2. **Give the app the client ID.** Ask the agent where to put it — usually an `.env.local` file or a config value. It will tell you the exact variable name for the app it built. This ID is not a secret so it is ok to share with the agent.
+
+> [!IMPORTANT]
+> NEVER share API keys or secrets with the agent. It doesn't need them to build your app, and they are sensitive information that should not be shared.
+
 3. **Ask the agent how to run it.** Something like: _"How do I install dependencies and run this app locally?"_ For a Vite app that's usually `npm install` then `npm run dev`; for a plain HTML page it may just be the Live Preview extension.
+
 4. **Open the local address** the run command prints (often `https://localhost:5173`) in your browser.
+
 5. **Sign in** with your ArcGIS Online named account when the app prompts you.
+
 6. **Try each agent** in the assistant chat:
    - ask a built-in agent to navigate or explore the map (e.g. _"zoom to the largest features"_),
    - ask your **org-layer agent** to add a layer from your organization,
@@ -62,7 +88,17 @@ Because the agent designs the app during the interview, the exact run command de
 
 Test and iterate with the agent as needed.
 
-## When something breaks, or you want to add more
+## Step 7 — OPTIONAL — Diagnose and fix bugs
+
+- Use the **`/diagnosing-bugs`** skill on something that you notice is not working as expected.
+
+## Step 8 — OPTIONAL — Add a feature
+
+- Start a **new `/grill-with-docs` session** scoped to just the new feature you want to add. Design it, then build it, just like before.
+
+## Key Takeaways
+
+### When something breaks, or you want to add more
 
 You've built the core. Here's how to keep going once the workshop's over.
 
