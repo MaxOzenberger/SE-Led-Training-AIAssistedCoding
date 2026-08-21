@@ -100,13 +100,11 @@ npx skills@latest add valdesrosier/arcgis-skills
 2. Paste the prompt below after the pill shape.
 
 ```
-I'd like to build an ArcGIS Experience Builder custom widget that is a
-radar chart (spider chart). I am using Experience Builder developer
-edition version 1.20 and will deploy it on ArcGIS Enterprise 12.1. The
-widget draws a radar chart from a single configured feature layer -
-select the layer from the map in the widget settings: each feature is
-one record, and I pick which numeric fields become the axes through the
-settings panel, so don't hard-code field names.
+I'd like to build an ArcGIS Experience Builder custom widget that is a radar chart (spider chart). I am using Experience Builder developer edition version 1.20 and will deploy it on ArcGIS Enterprise 12.1.
+
+Before grilling me on design decisions, use the the exb-widget skill and the arcgis-docs-lookup skill to look up anything you are not sure about for the overall design and approach.
+
+The widget draws a radar chart from a single configured feature layer - select the layer from the map in the widget settings: each feature is one record, and I pick which numeric fields become the axes through the settings panel, so don't hard-code field names.
 
 Settings I'd like to be able to change:
 Configure the maximum for the axes (default 100)
@@ -127,8 +125,7 @@ Turn on and off radial axis scales
 Turn on and off data point labels
 Turn on and off spoke lines and internal axes lines
 
-Overall, the chart should function with the existing ArcGIS Experience
-Builder data schema and should reflect the themes.
+Overall, the chart should function with the existing ArcGIS Experience Builder data schema and should reflect the themes.
 
 Ask me about anything ambiguous before we settle the design.
 ```

@@ -22,10 +22,9 @@ We'll design it first using `/grill-with-docs`, then build it.
 3. Paste the following prompt after the pill.
 
 ```
-I want to build a set of "glass" cards in plain HTML and CSS that I can
-add to an ArcGIS Hub site. The look I'm going for is glassmorphism:
-frosted, semi-transparent panels with a soft blur, a thin light border,
-and a gentle shadow, sitting on top of a background image.
+I want to build a set of "glass" cards in plain HTML and CSS that I can add to an ArcGIS Hub site. The look I'm going for is glassmorphism: frosted, semi-transparent panels with a soft blur, a thin light border, and a gentle shadow, sitting on top of a background image.
+
+Before grilling me on design decisions, use the the arcgis-html-css skill and the arcgis-docs-lookup skill to look up anything you are not sure about for the overall design and approach.
 
 Each card should have:
 - a title
@@ -34,13 +33,9 @@ Each card should have:
 - a button or link
 
 I'd like a few cards laid out in a responsive row that stacks on
-smaller screens. Keep the code simple and self-contained so I can paste
-it into a Hub embed, and make it easy to swap the colors, text, and
-background later.
+smaller screens. Keep the code simple and self-contained so I can paste it into a Hub embed, and make it easy to swap the colors, text, and background later.
 
-Ask me about anything ambiguous — like how many cards, the color theme,
-and whether the cards should link out or open something — before we
-settle the design.
+Ask me about anything ambiguous — like how many cards, the color theme, and whether the cards should link out or open something — before we settle the design.
 
 Write all code and files for this project only inside the `exercise-02-htmlcss/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
 ```

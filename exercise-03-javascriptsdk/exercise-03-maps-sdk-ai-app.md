@@ -22,20 +22,19 @@ We'll design it first using `/grill-with-docs`, then build it.
 3. Paste the following prompt after the pill.
 
 ```
-I want to build a web app using the ArcGIS Maps SDK for JavaScript and
-its AI Components. It should have:
+I want to build a web app using the ArcGIS Maps SDK for JavaScript and its AI Components. It should have:
 
 1. Sign-in to ArcGIS (named ArcGIS Online account).
 
-2. The ability to switch between web maps - but when the app first
-   loads, start by prompting me to choose which map to load.
+2. The ability to switch between web maps - but when the app first loads, start by prompting me to choose which map to load.
 
-3. An AI assistant with several agents:
-   - the out-of-the-box agents that come with the AI Components,
-   - a custom agent that lets me add any layer from my ArcGIS
-     organization to the map,
-   - and another custom agent that lets me add any layer from the
-     ArcGIS Living Atlas to the map.
+3. When loading the map from my organization, or swithcing the map, immediately create embeddings for the assistant to use.
+
+4. Add the out-of-the-box agents that come with the AI Components, and create two custom agents:
+   - a custom agent that lets me add any layer from my ArcGIS organization to the map,
+   - and another custom agent that lets me add any layer from the ArcGIS Living Atlas to the map.
+
+Before grilling me on design decisions, use the the js-sdk skill and the arcgis-docs-lookup skill to look up anything you are not sure about for the overall design and approach.
 
 Ask me about anything ambiguous before we settle the design.
 

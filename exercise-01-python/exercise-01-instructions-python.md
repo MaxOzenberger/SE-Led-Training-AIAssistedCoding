@@ -129,22 +129,20 @@ npx skills@latest add valdesrosier/arcgis-skills
 2. Paste the prompt below after the pill shape.
 
 ```
-I want to build an ArcGIS Notebook for an organization administrator that monitors newly created hosted feature services.
+I want to build an ArcGIS Notebook for an organization administrator in ArcGIS Online that monitors newly created hosted feature services.
+
+Before grilling me on design decisions, use the the python-notebook skill and the arcgis-docs-lookup skill to look up anything you are not sure about for the overall design and approach.
 
 It should do two things in one run:
 
 1. Search our ArcGIS organization and build a table showing the **10 most recently created hosted feature services**. Include useful information such as the title, owner, creation date, sharing level, and number of views.
 
-2. Stub out code that will send **ONE email** to the admin if any of those items are publicly shared.
+2. Stub out code that will send **ONE email** to the users in an administrator group if any of those items are publicly shared.
 
    * The email should identify the items and their owners.
-   * **IMPORTANT:** Put this email code in its own notebook cell and comment it out so I can review it before implementing it.
+   * **IMPORTANT:** Put this email code in its own notebook cell add a test option that prints the email instead of sending so I can see what it will send before toggling it on to active.
 
 Only hosted feature services should be included. Files, tiles, imagery, and other item types should be excluded.
-
-Use ArcGIS search and its server-side sorting capabilities rather than retrieving every item in the organization and sorting them locally.
-
-The notebook runs inside ArcGIS Online, so it can't send normal email. Use `Group.notify()` to email named users in the organization instead.
 
 Keep the implementation straightforward.
 
