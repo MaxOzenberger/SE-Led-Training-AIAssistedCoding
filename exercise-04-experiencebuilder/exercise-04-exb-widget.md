@@ -82,7 +82,7 @@ npx skills@latest add valdesrosier/arcgis-skills
    > **What `/setup-matt-pocock-skills` does:** This is a one-time setup command for Matt's skills. It wires them into your project's workflow — it asks which **issue tracker** you use (GitHub, Linear, or local files), what **labels** you apply when triaging tickets, and where to **save the docs** the skills create (like `CONTEXT.md` and ADRs). It's what lets later skills publish tickets and save their paper trail in a consistent place. You run it once per project — we're running it here in the cloned repo, and exercises 2 and 3 reuse it.
 
 4. During the setup skill, if asked on the following (you can reply in the chat with natural language):
-   - **Issue tracker:** choose GitHub
+   - **Issue tracker:** choose local markdown
    - **Labels:** choose to keep the defaults
    - **Domain Docs :** choose to create AGENTS.md
 

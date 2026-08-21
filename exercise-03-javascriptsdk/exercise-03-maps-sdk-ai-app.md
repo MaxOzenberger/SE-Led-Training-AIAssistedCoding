@@ -28,7 +28,7 @@ I want to build a web app using the ArcGIS Maps SDK for JavaScript and its AI Co
 
 2. The ability to switch between web maps - but when the app first loads, start by prompting me to choose which map to load.
 
-3. When loading the map from my organization, or swithcing the map, immediately create embeddings for the assistant to use.
+3. When loading the map from my organization, or switching the map, immediately create embeddings for the assistant to use.
 
 4. Add the out-of-the-box agents that come with the AI Components, and create two custom agents:
    - a custom agent that lets me add any layer from my ArcGIS organization to the map,

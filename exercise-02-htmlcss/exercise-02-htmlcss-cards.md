@@ -72,19 +72,18 @@ Use the **Live Preview** extension — it shows your page in a pane inside VS Co
 
    > [!NOTE]
    > Other preview option: you can also double-click the HTML file in File Explorer to open it in your browser. That's fine for static cards, but Live Preview is the smoother option and avoids browser security blocks if your cards ever pull live data.
+   5. Work through any iterations / changes with the assistant.
 
-5. Work through any iterations / changes with the assistant.
+## Step 3 — Enhance the Cards
 
-## Step 3 — OPTIONAL — Add it to an ArcGIS Hub site
-
-- Paste it into an ArcGIS Hub site Text HTML/CSS.
-
-## Want to go further?
-
-If you finish early, ask the agent about cooler additions, for example:
+Be creative, prompt the agent about cooler additions, for example:
 
 - Cards that **flip or expand** on hover to reveal more,
 - A **live stat** on each card pulled from a feature layer,
 - Matching the card colors to your Hub site's theme automatically.
 
 Feel free to also test with other models to see how they vary in output.
+
+## Step 4 — OPTIONAL — Add it to an ArcGIS Hub site
+
+- Paste it into an ArcGIS Hub site Text HTML/CSS.
