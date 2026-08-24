@@ -22,7 +22,7 @@ We'll design it first using `/grill-with-docs`, then build it.
 3. Paste the following prompt after the pill.
 
 ```
-I want to build a web app using the ArcGIS Maps SDK for JavaScript and its AI Components. It should have:
+I want to build a react web app using the ArcGIS Maps SDK for JavaScript and its AI Components. It should have:
 
 1. Sign-in to ArcGIS (named ArcGIS Online account).
 
