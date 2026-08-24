@@ -1,0 +1,154 @@
+<style>
+  :root {
+    --glass-background: rgba(18, 48, 39, 0.68);
+    --glass-border: rgba(226, 244, 227, 0.42);
+    --glass-shadow: rgba(4, 24, 18, 0.34);
+    --glass-text: #f4faef;
+    --glass-muted: #d5e7d1;
+    --glass-accent: #e8bd72;
+    --glass-accent-ink: #173526;
+    --glass-background-image: url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2000&q=85");
+  }
+
+  .glass-cards {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 520px;
+    padding: clamp(2rem, 6vw, 5rem) clamp(1rem, 5vw, 4rem);
+    color: var(--glass-text);
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #173d30;
+    background-image: linear-gradient(rgba(8, 35, 27, 0.38), rgba(8, 35, 27, 0.72)), var(--glass-background-image);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .glass-cards__intro {
+    max-width: 42rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+
+  .glass-cards__eyebrow {
+    margin: 0 0 0.5rem;
+    color: var(--glass-accent);
+    font-family: Verdana, sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .glass-cards__heading {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.05;
+  }
+
+  .glass-cards__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  .glass-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    background: var(--glass-background);
+    box-shadow: 0 1.25rem 2.5rem var(--glass-shadow);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+
+  .glass-card__icon {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.25rem;
+    border: 2px solid rgba(232, 189, 114, 0.75);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .glass-card__title {
+    margin: 0 0 0.75rem;
+    font-size: 1.45rem;
+    line-height: 1.2;
+  }
+
+  .glass-card__description {
+    margin: 0;
+    color: var(--glass-muted);
+    font-family: Verdana, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .glass-card__link {
+    align-self: flex-start;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    color: var(--glass-accent);
+    font-family: Verdana, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+  }
+
+  .glass-card__link:hover,
+  .glass-card__link:focus {
+    color: #fff5d6;
+  }
+
+  @media (max-width: 760px) {
+    .glass-cards {
+      min-height: 0;
+    }
+
+    .glass-cards__list {
+      grid-template-columns: 1fr;
+    }
+
+    .glass-card {
+      min-height: 220px;
+    }
+  }
+</style>
+
+<section class="glass-cards">
+  <div class="glass-cards__intro">
+    <p class="glass-cards__eyebrow">The living landscape</p>
+    <h1 class="glass-cards__heading">Find your place in the map</h1>
+  </div>
+
+  <div class="glass-cards__list">
+    <article class="glass-card">
+      <img class="glass-card__icon" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ovechkin_%2844167919%29.jpg?width=160" alt="Alexander Ovechkin at a Washington Capitals training camp">
+      <h2 class="glass-card__title">Explore the Landscape</h2>
+      <p class="glass-card__description">Discover forests, trails, and protected places through interactive maps.</p>
+      <a class="glass-card__link" href="https://www.arcgis.com/home/webmap/viewer.html" target="_blank" rel="noopener noreferrer">Explore maps (opens external site)</a>
+    </article>
+
+    <article class="glass-card">
+      <img class="glass-card__icon" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ovechkin_reupload.jpg?width=160" alt="Alexander Ovechkin during the 2009 Stanley Cup playoffs">
+      <h2 class="glass-card__title">Find Local Data</h2>
+      <p class="glass-card__description">Browse datasets that help explain the places and communities around you.</p>
+      <a class="glass-card__link" href="https://www.arcgis.com/home/search.html" target="_blank" rel="noopener noreferrer">Browse data (opens external site)</a>
+    </article>
+
+    <article class="glass-card">
+      <img class="glass-card__icon" src="https://commons.wikimedia.org/wiki/Special:FilePath/Alex_Ovechkin_with_Stanley_Cup.jpg?width=160" alt="Alexander Ovechkin holding the Stanley Cup">
+      <h2 class="glass-card__title">Share Your Story</h2>
+      <p class="glass-card__description">Learn how location-based information supports better decisions.</p>
+      <a class="glass-card__link" href="https://www.esri.com/en-us/arcgis/products/arcgis-hub/overview" target="_blank" rel="noopener noreferrer">Learn more (opens external site)</a>
+    </article>
+  </div>
+</section>
